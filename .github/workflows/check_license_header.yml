@@ -1,0 +1,32 @@
+name: Check License Header
+
+on:
+  push:
+    branches:
+      - "main"
+      - "dev"
+    paths:
+      - 'src/**/*.ts'
+      - 'tests/**/*.ts'
+  pull_request:
+    branches:
+      - "main"
+      - "dev"
+    paths:
+      - 'src/**/*.ts'
+      - 'tests/**/*.ts'
+  workflow_dispatch:
+
+jobs:
+  verify_headers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Check License Headers
+        uses: viperproject/check-license-header@v2.0.3
+        with:
+          path: .
+          config: '.github/license-config.json'
+          strict: false
