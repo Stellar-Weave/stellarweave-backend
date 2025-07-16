@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/config/*": ["config/*"],
+      "@/lib/*": ["lib/*"],
+      "@/plugins/*": ["plugins/*"],
+      "@/websockets/*": ["websockets/*"]
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "stellarweave-backend",
+  "version": "0.1.0-alpha.0",
+  "description": "The backend service handling map storage, user accounts, syncing, and real-time collaboration features for StellarWeave.",
+  "main": "dist/server.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec \"node --loader ts-node/esm\" src/server.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts --max-warnings=0",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prebuild": "npm run lint && npm run format:check",
+    "pretest": "npm run lint && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.x.x",
+    "ts-node": "^10.x.x",
+    "nodemon": "^3.x.x",
+    "eslint": "^8.x.x",
+    "prettier": "^3.x.x",
+    "@typescript-eslint/eslint-plugin": "^7.x.x",
+    "@typescript-eslint/parser": "^7.x.x",
+    "eslint-config-airbnb-base": "^15.x.x",
+    "eslint-config-airbnb-typescript": "^18.x.x",
+    "eslint-config-prettier": "^9.x.x",
+    "eslint-plugin-import": "^2.x.x",
+    "jest": "^29.x.x",
+    "ts-jest": "^29.x.x",
+    "@types/jest": "^29.x.x",
+    "@types/node": "^20.x.x"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "typescript",
+    "fastify",
+    "socket.io",
+    "prisma",
+    "real-time",
+    "collaboration",
+    "map-storage",
+    "user-accounts"
+  ],
+  "author": "Jarif Junaeed <stellarweave.dev@protonmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stellar-Weave/stellarweave-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Stellar-Weave/stellarweave-backend/issues",
+    "email": "stellarweave.dev@protonmail.com"
+  },
+  "homepage": "https://github.com/Stellar-Weave/stellarweave-backend#readme",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
