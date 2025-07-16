@@ -25,9 +25,6 @@ on:
       - "Dockerfile" 
       - "docker-compose.yml" 
       - ".env.example" 
-    paths-ignore: 
-      - "src/**/*.d.ts" 
-      - "src/**/*.test.ts" 
   pull_request:
     branches:
       - "main"
@@ -41,9 +38,6 @@ on:
       - "Dockerfile"
       - "docker-compose.yml"
       - ".env.example"
-    paths-ignore: 
-      - "src/**/*.d.ts"
-      - "src/**/*.test.ts"
   schedule:
     - cron: '39 1 * * 6'
   workflow_dispatch:    
