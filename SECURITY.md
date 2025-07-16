@@ -12,7 +12,7 @@ We are currently in active development. Supported versions for security updates 
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in StellarWeave Client, we strongly encourage you to report it privately to help protect users.
+If you discover a security vulnerability in StellarWeave, we strongly encourage you to report it privately to help protect users.
 
 ### 🔒 How to Report
 
