@@ -3,9 +3,27 @@ on:
   push:
     branches:
       - main
+    paths: # Add this section
+      - 'src/**/*.ts' # Trigger on changes in any TypeScript file in src/
+      - 'tests/**/*.ts' # Trigger on changes in any TypeScript file in tests/
+      - '.eslintrc.js' # Trigger if ESLint config changes
+      - '.prettierrc.js' # Trigger if Prettier config changes
+      - 'package.json' # Trigger if dependencies or scripts change
+      - 'tsconfig.json' # Trigger if TypeScript config changes
+      - 'package-lock.json' # Trigger if package-lock changes (e.g., after npm ci)
+
   pull_request:
     branches:
       - main
+    paths: # Add this section
+      - 'src/**/*.ts'
+      - 'tests/**/*.ts'
+      - '.eslintrc.js'
+      - '.prettierrc.js'
+      - 'package.json'
+      - 'tsconfig.json'
+      - 'package-lock.json'
+  workflow_dispatch:
 
 jobs:
   lint-and-format:
