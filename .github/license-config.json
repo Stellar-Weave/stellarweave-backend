@@ -1,0 +1,12 @@
+[
+  {
+    "include": [
+      "src/**/*.ts",
+      "tests/**/*.ts"
+    ],
+    "exclude": [
+      "src/lib/generated/**/*"
+    ],
+    "license": ".github/license-header.txt"
+  }
+]
