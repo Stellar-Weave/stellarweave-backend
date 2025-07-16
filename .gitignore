@@ -1,0 +1,102 @@
+# stellarweave-backend/.gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Build output & Dependencies
+# ==================================
+dist/
+build/
+node_modules/
+jspm_packages/
+web_modules/
+*.tsbuildinfo
+*.tgz
+
+# Environment Variables
+# ==================================
+# Ignore all .env files but keep the example template
+.env
+.env.*
+!.env.example
+
+# IDE & Editor Specific
+# ==================================
+.idea/ # <-- For JetBrains IDEs (WebStorm, etc.)
+.vscode/ # <-- For Visual Studio Code (except settings you want to share)
+*.sublime-project
+*.sublime-workspace
+.fleet/
+
+# OS Specific
+# ==================================
+.DS_Store # <-- For macOS
+Thumbs.db # <-- For Windows
+
+# Caches
+# ==================================
+.npm/
+.eslintcache
+.stylelintcache
+.parcel-cache
+.cache/
+
+# Misc Tooling
+# ==================================
+.grunt
+bower_components
+.lock-wscript
+.yarn-integrity
+.node_repl_history
+
+# Framework specific (kept from your original for completeness)
+.next
+out
+.nuxt
+.vuepress/dist
+.temp
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+
+# Serverless / DB Local
+.serverless/
+.dynamodb/
+.firebase/
+.tern-port
+
+# yarn v3
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Vite logs files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Visual Studio 2022 Related
+.vs/
