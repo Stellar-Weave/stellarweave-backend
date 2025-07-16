@@ -41,16 +41,16 @@ web_modules/
 
 # IDE & Editor Specific
 # ==================================
-.idea/ # <-- For JetBrains IDEs (WebStorm, etc.)
-.vscode/ # <-- For Visual Studio Code (except settings you want to share)
+.idea/ #
+.vscode/
 *.sublime-project
 *.sublime-workspace
 .fleet/
 
 # OS Specific
 # ==================================
-.DS_Store # <-- For macOS
-Thumbs.db # <-- For Windows
+.DS_Store
+Thumbs.db
 
 # Caches
 # ==================================
