@@ -6,7 +6,9 @@ version = 1
 # This includes dotfiles like .gitignore and regular files like README.md.
 path = [
     "*",
-    ".github/**",
+    ".github/*",
+    ".github/workflows/lint_and_format.yml",
+    ".github/workflows/codeql.yml",
     "docs/**"
 ]
 
