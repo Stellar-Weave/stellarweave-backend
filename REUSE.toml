@@ -6,7 +6,8 @@ version = 1
 # This includes dotfiles like .gitignore and regular files like README.md.
 path = [
     "*",
-    ".github/**"
+    ".github/**",
+    "docs/**"
 ]
 
 # 'override' ensures that this information is authoritative and any
