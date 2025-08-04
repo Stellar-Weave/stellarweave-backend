@@ -1,28 +1,27 @@
-name: Check License Header
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
+name: REUSE Compliance Check
 
 on:
   push:
     branches:
       - "main"
       - "dev"
-    paths:
-      - 'src/**/*.ts'
-      - 'tests/**/*.ts'
   pull_request:
     branches:
       - "main"
       - "dev"
-    paths:
-      - 'src/**/*.ts'
-      - 'tests/**/*.ts'
   workflow_dispatch:
 
 jobs:
-  verify_headers:
+  reuse-compliance-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v4
+
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v5
 
       - name: Check License Headers
         uses: viperproject/check-license-header@v2.0.3

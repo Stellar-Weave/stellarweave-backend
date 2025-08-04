@@ -187,8 +187,8 @@ Enhancement suggestions are tracked as [GitHub issues](/issues).
 When adding new source or header files, please include the following copyright header at the top of each file to ensure consistent licensing and legal clarity.
 
 ```
+// SPDX-FileCopyrightText: 2025 Jarif Junaeed <stellarweave.dev@protonmail.com>
 // SPDX-License-Identifier: Apache-2.0
-// Copyright 2025 Jarif Junaeed
 ```
 
 #### Contribution Quality Standards

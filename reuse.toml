@@ -1,0 +1,15 @@
+# REUSE Specification Version 1
+version = 1
+
+[[annotations]]
+# The glob pattern "*" matches all files in this directory.
+# This includes dotfiles like .gitignore and regular files like README.md.
+path = ["*"]
+
+# 'override' ensures that this information is authoritative and any
+# conflicting license information inside the files themselves is ignored.
+precedence = "override"
+
+# Your copyright and license information from the header.
+SPDX-FileCopyrightText = "2025 Jarif Junaeed <stellarweave.dev@protonmail.com>"
+SPDX-License-Identifier = "Apache-2.0"
