@@ -33,7 +33,7 @@ And if you like the project, but just don't have time to contribute, that's fine
   - [How to Contribute to Backend Docs](#how-to-contribute-to-backend-docs)
   - [Central Documentation](#central-documentation)
 - [Styleguides](#styleguides)
-  - [Principles and Tools](#principles-and-tools)
+  - [Principles and Tools](#1-principles-and-tools)
   - [Code Enforcement Workflow](#2-code-enforcement-workflow)
   - [Recommended IDE Setup (VS Code)](#3-recommended-ide-setup-vs-code)
 - [Commit Guidelines](#commit-guidelines)
